@@ -11,7 +11,7 @@ public class Scripture
     public string _scriptureText;
 
 
-    // Methods
+
     public void LoadScriptures()
     {
         List<string> readText = File.ReadAllLines(_fileName).Where(arg => !string.IsNullOrWhiteSpace(arg)).ToList();

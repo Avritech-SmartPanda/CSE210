@@ -3,11 +3,11 @@ using System.Diagnostics;
 
 public class Spinner
 {
-    // Attributes 
+
     int counter;
 
 
-    // Methods
+
     public void Stopwatch()
     {
         Stopwatch timer = new Stopwatch();

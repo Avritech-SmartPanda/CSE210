@@ -2,7 +2,7 @@ using System;
 
 public abstract class Menu
 {
-    // Attributes
+
     public string _menu { get; set; }
     protected string _userInput { get; set; }
     protected int _userChoice;
@@ -10,14 +10,27 @@ public abstract class Menu
     protected string _wordFileName { get; set; }
 
 
-    // Constructors
-
-
-    // Methods
     public abstract void DisplayMenu();
     public int UserChoice()
     {
-                return _userChoice;
+        DisplayMenu();
+
+        _userInput = Console.ReadLine();
+        _userChoice = 0;
+        try
+        {
+            _userChoice = int.Parse(_userInput);
+        }
+        catch (FormatException)
+        {
+            _userChoice = 0;
+        }
+        catch (Exception exception)
+        {
+            Console.WriteLine(
+                $"Unexpected error:  {exception.Message}");
+        }
+        return _userChoice;
     }
     public abstract void MenuChoice();
 

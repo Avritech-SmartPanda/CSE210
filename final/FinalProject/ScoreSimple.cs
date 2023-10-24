@@ -2,24 +2,16 @@ using System;
 
 public class ScoreSimple : ScoringRules
 {
-    // Attributes
-    private int score;
 
+    private int _score;
 
-    // Constructors
-
-
-    // Methods
-    public override int CalculateScore(int numGuesses, List<string> letters, string word)
+    public override int CalculateScore(int numOfGuesses, List<string> letters, string word)
     {
-        return score;
+        _score = numOfGuesses;
+        return _score;
     }
     public override void ShowScore()
     {
-        Console.WriteLine($"Your simple word score: {score} ");
+        Console.WriteLine($"Your simple word score: {_score} ");
     }
-
-
-
-
 }

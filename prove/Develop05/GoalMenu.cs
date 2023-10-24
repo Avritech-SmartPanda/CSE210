@@ -2,7 +2,7 @@ using System;
 
 public class GoalMenu
 {
-    // Attributes 
+
     private string _menu = $@"
 Goal Menu Options
 ===========================================
@@ -18,7 +18,7 @@ What type of goal would you like to create?  ";
     public string _goalInput;
     private int _goalChoice = 0;
 
-    // Methods
+
     public int GoalChoice()
     // Method to display choices to user
     {

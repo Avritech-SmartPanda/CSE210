@@ -3,16 +3,13 @@ using System.Threading;
 
 public class ScoreTimed : ScoringRules
 {
-    // Attributes
+
     private int score;
 
-    // Constructors
-
-
-    // Methods
     public override int CalculateScore(int numGuesses, List<string> letters, string word)
     {
-        return 0;
+        int totalScore = 0;    
+        return totalScore;
     }
     public override void ShowScore()
     {

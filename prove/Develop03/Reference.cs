@@ -11,7 +11,7 @@ public class Reference
     private int _verseStart;
     private int _verseEnd;
 
-    // Methods
+
     public void LoadReference()
     {
         List<string> readText = File.ReadAllLines(_fileName).Where(arg => !string.IsNullOrWhiteSpace(arg)).ToList();

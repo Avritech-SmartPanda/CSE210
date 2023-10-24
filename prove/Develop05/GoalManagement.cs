@@ -4,12 +4,12 @@ using System.IO;
 public class GoalManagement
 
 {
-    // Attributes
+
     private List<Goal> _goals = new List<Goal>();
     private int _totalPoints;
 
 
-    // Constructors
+
     public GoalManagement()
     {
         _totalPoints = 0;
@@ -39,7 +39,7 @@ public class GoalManagement
         return _goals;
     }
 
-    // Methods
+
     public void ListGoals()
     {
         if (_goals.Count() > 0)
@@ -64,7 +64,7 @@ public class GoalManagement
         ListGoals();
 
         Console.Write("\nWhich goal did you accomplished?  ");
-        int select = int.Parse(Console.ReadLine())-1;
+        int select = int.Parse(Console.ReadLine()) - 1;
 
         int goalPoints = GetGoalsList()[select].GetPoints();
         AddPoints(goalPoints);

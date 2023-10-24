@@ -2,7 +2,7 @@ using System;
 
 public class Choices
 {
-    // Attributes
+
     private string _menu = $@"
 Menu Options
 ===========================================
@@ -17,7 +17,7 @@ Select an option from the menu:  ";
     public string _userInput;
     private int _userChoice = 0;
 
-   
+
     // Method to display choices to user
     public int UserChoice()
     {
